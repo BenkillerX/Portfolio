@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import Hero from "./Hero";
 
 const Navsection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,20 +80,7 @@ const Navsection = () => {
         </nav>
       </header>
 
-      <main className="hero">
-        <div className="hero-text">
-          <h2 data-aos="zoom-in" data-aos-duration="700" data-aos-once="true">Welcome to My Portfolio</h2>
-          <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" >
-            I'm Benedict Akhere, a passionate web developer specializing in
-            creating beautiful and functional websites. Explore my projects and
-            skills below.
-          </p>
-          <a data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" href="#contact" className="btn">Hire Me</a>
-        </div>
-        <div data-aos="zoom-in" data-aos-once="true" className="hero-image">
-            <img  src="/Portfolioimg.jpg" alt="" className="img_img"/>
-        </div>
-      </main>
+    <Hero/>
     </section>
   );
 };

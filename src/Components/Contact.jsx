@@ -5,8 +5,8 @@ const whatsappNumber = "+2348033885711" // Replace with your WhatsApp number (co
 const Contact = () => {
   return (
     <section className="contact-section" id='contact' >
-      <h2 className="contact-title" data-aos="fade-up">Contact Me</h2>
-      <p className="contact-desc" data-aos="fade-up">
+      <h2 className="contact-title">Contact Me</h2>
+      <p className="contact-desc">
         Want to work with me or have a question? Reach out directly on WhatsApp!
       </p>
       <a
@@ -14,7 +14,6 @@ const Contact = () => {
         href={`https://wa.me/${whatsappNumber}`}
         target="_blank"
         rel="noopener noreferrer"
-        data-aos="fade-up"
       >
         Message Me on WhatsApp
       </a>

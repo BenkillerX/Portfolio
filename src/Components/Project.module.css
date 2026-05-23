@@ -1,0 +1,129 @@
+.projects-section {
+  padding: 4rem 1rem;
+  background: rgba(128, 128, 128, 0.08);
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+
+/* CARD */
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;    
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.1);
+}
+
+/* LEFT */
+.project-left {
+  flex: 1;
+}
+
+.project-left h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.project-left p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* BUTTONS */
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-buttons button,
+.visit-btn {
+  padding: 0.9rem 1.5rem;
+  border-radius: 10px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+/* READ MORE BUTTON */
+.project-buttons button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+}
+
+.project-buttons button:hover {
+  background: #e63e5c;
+  transform: translateY(-2px);
+}
+
+/* VISIT BUTTON */
+.visit-btn {
+  background: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.visit-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* RIGHT */
+.project-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .project-left h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-img {
+    max-width: 100%;
+  }
+}
