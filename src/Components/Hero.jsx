@@ -51,7 +51,7 @@ const Hero = () => {
 
   <div className={styles["hero-image"]}>
     <img
-      src="/Portfolioimg.jpg"
+      src="/DevBen.JPG"
       alt="Benedict Akhere"
       className={styles["img_img"]}
     />
