@@ -54,7 +54,7 @@ const Projects = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="visit-btn"
+                    className={styles["visit-btn"]}
                   >
                     Visit App
                   </a>

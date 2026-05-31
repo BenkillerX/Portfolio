@@ -32,12 +32,12 @@ const Hero = () => {
 
     <div className={styles["hero-stats"]}>
       <div>
-        <h3>5+</h3>
+        <h3>2+</h3>
         <span>Projects Built</span>
       </div>
 
       <div>
-        <h3>Next.js</h3>
+        <h3>React.js</h3>
         <span>Frontend Focus</span>
       </div>
 

@@ -7,7 +7,7 @@
   width: 90%;
   max-width: 1250px;
   margin: 0 auto;
-  padding: 7rem 1rem 4rem;
+  padding: 4rem 1rem 4rem;
   position: relative;
   z-index: 2;
 }
@@ -113,20 +113,15 @@
 
 .secondary-btn:hover {
   background: white;
-
   color: black;
-
   transform: translateY(-4px);
 }
 
 /* STATS */
 .hero-stats {
   display: flex;
-
   gap: 2.5rem;
-
   margin-top: 1rem;
-
   flex-wrap: wrap;
 }
 
@@ -138,9 +133,7 @@
 
 .hero-stats h3 {
   color: #ff4d6d;
-
   font-size: 1.6rem;
-
   font-weight: 700;
 }
 
@@ -165,17 +158,13 @@
 .img_img {
   width: 100%;
   max-width: 430px;
-
   border-radius: 30px;
-
   object-fit: cover;
-
   box-shadow:
     0 20px 50px rgba(0,0,0,0.35),
     0 0 40px rgba(255,77,109,0.12);
 
   border: 1px solid rgba(255,255,255,0.08);
-
   transition: transform 0.4s ease;
 }
 
