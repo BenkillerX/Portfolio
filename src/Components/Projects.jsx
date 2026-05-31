@@ -11,7 +11,7 @@ const projects = [
   {
   title: "Booking Web App",
   img: "/QuickStay.png",
-  url: "https://booking-app-ben-dev27.vercel.app/",
+  url: "https://booking-app-two-delta.vercel.app/",
   description:
     "A booking platform designed to simplify reservations and appointment management for users and businesses. The project was created to solve common challenges involved in manual booking processes such as scheduling conflicts, poor organization, and inefficient customer management. The platform features a clean and responsive interface where users can browse available services, select booking dates, and manage reservations seamlessly. Built using React for the frontend, Firebase for backend services and authentication, and Tailwind CSS for styling, the application focuses on performance, scalability, and user experience. Developing this project helped strengthen my understanding of dynamic user interfaces, component-based architecture, responsive web design, routing, state management, and integrating cloud databases with real-time functionality."
 }, 
