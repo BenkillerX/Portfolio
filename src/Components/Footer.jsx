@@ -20,7 +20,7 @@ const Footer = () => {
           <a href="https://github.com/BenkillerX" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <a href="https://twitter.com/DevBen08" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <FaTwitter />
           </a>
         </div>
