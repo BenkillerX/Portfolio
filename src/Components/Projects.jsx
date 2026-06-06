@@ -8,13 +8,20 @@ const projects = [
     description:
       "A modern school management system built to simplify the daily operations of schools, students, teachers and administrators. The project was created to solve common problems such as manual student record keeping, attendance management, course organization, and communication within schools. The platform features a clean and responsive user interface with pages for student management, academic records, dashboard analytics, and school information. Built using React for the frontend, Firebase for backend services and authentication, and Tailwind for styling, the project focuses on speed, scalability, and user experience. This project also helped improve my understanding of component-based architecture, routing, responsive web design, state management, and integrating frontend applications with cloud databases and authentication systems."
   },
-  {
+{
   title: "Booking Web App",
   img: "/QuickStay.png",
   url: "https://booking-app-two-delta.vercel.app/",
   description:
     "A booking platform designed to simplify reservations and appointment management for users and businesses. The project was created to solve common challenges involved in manual booking processes such as scheduling conflicts, poor organization, and inefficient customer management. The platform features a clean and responsive interface where users can browse available services, select booking dates, and manage reservations seamlessly. Built using React for the frontend, Firebase for backend services and authentication, and Tailwind CSS for styling, the application focuses on performance, scalability, and user experience. Developing this project helped strengthen my understanding of dynamic user interfaces, component-based architecture, responsive web design, routing, state management, and integrating cloud databases with real-time functionality."
 }, 
+{
+  title: "ShopHub",
+  img: "/e-commerce.png",
+  url: "https://shop-hub-mu-hazel.vercel.app/",
+  description:
+    "An e-commerce platform designed to help businesses showcase and sell products online through a modern, responsive, and user-friendly interface. The application features a dedicated admin dashboard where administrators can efficiently manage products through full CRUD operations (Create, Read, Update, and Delete), making inventory management simple and organized. Customers can browse products, view detailed product information, add items to their cart, and proceed to checkout seamlessly. For order processing, the checkout system redirects customers directly to the business owner's WhatsApp account, enabling quick communication and order confirmation without requiring a payment gateway.Built with React, Firebase, and Tailwind CSS, the platform emphasizes performance, scalability, and mobile responsiveness, ensuring a smooth experience across smartphones, tablets, and desktop devices. Developing this project strengthened my skills in frontend development, state management, authentication, database integration, responsive design, routing, and building real-world business solutions using modern web technologies."
+},
 ];
 
 const Projects = () => {

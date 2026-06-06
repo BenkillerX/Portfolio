@@ -2,7 +2,7 @@ import styles from "./Hero.module.css"
 const Hero = () => {
   return (
     <>
-      <main className={styles["hero"]}>
+    <main className={styles["hero"]}>
   <div className={styles["hero-text"]}>
 
     <span className={styles["hero-badge"]}>
