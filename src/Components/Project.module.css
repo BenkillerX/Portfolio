@@ -1,6 +1,6 @@
 .projects-section {
   padding: 4rem 1rem;
-  background: rgba(128, 128, 128, 0.08);
+  border-top: 1px solid white;
 }
 
 .projects-title {
@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;    
-  border-radius: 24px;
+  border-radius: 8px;
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 8px 30px rgba(0,0,0,0.06);

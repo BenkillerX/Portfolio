@@ -5,7 +5,6 @@ import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import { FaArrowUp } from "react-icons/fa";
-import 'aos/dist/aos.css';
 
 const App = () => {
   return (

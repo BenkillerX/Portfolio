@@ -3,7 +3,7 @@ const Hero = () => {
   return (
     <>
     <main className={styles["hero"]}>
-  <div className={styles["hero-text"]}>
+    <div className={styles["hero-text"]}>
 
     <span className={styles["hero-badge"]}>
       Software Engineer
@@ -15,7 +15,7 @@ const Hero = () => {
     </h1>
 
     <p>
-      I'm Benedict Akhere, a Software engineer passionate about
+      I&rsquo;m Benedict Akhere, a Software engineer passionate about
       creating responsive, user-friendly, and scalable web applications
       using mordern technologies such as Next.js, Tailwind, Firebase, and modern web technologies.
     </p>
@@ -32,18 +32,18 @@ const Hero = () => {
 
     <div className={styles["hero-stats"]}>
       <div>
-        <h3>2+</h3>
+        <h3>5+</h3>
         <span>Projects Built</span>
       </div>
 
       <div>
-        <h3>React.js</h3>
-        <span>Frontend Focus</span>
+        <h3>Next.js</h3>
+        <span>Frontend</span>
       </div>
 
       <div>
-        <h3>Firebase</h3>
-        <span>Backend Integration</span>
+        <h3>Node & Express</h3>
+        <span>Backend</span>
       </div>
     </div>
 

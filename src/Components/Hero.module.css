@@ -7,7 +7,7 @@
   width: 90%;
   max-width: 1250px;
   margin: 0 auto;
-  padding: 4rem 1rem 4rem;
+  padding: 5rem 1rem 4rem;
   position: relative;
   z-index: 2;
 }
@@ -146,11 +146,9 @@
 /* RIGHT SIDE */
 .hero-image {
   flex: 1;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
 }
 
@@ -163,7 +161,6 @@
   box-shadow:
     0 20px 50px rgba(0,0,0,0.35),
     0 0 40px rgba(255,77,109,0.12);
-
   border: 1px solid rgba(255,255,255,0.08);
   transition: transform 0.4s ease;
 }

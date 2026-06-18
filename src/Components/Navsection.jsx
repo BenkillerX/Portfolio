@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Hero from "./Hero";
+import styles from "./Navbar.module.css"
 
 const Navsection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,28 +25,29 @@ const Navsection = () => {
   }, [menuOpen, closeMenu]);
 
   return (
-    <section className="navsection" id="home">
-      <header>
+    <section className={styles["navsection"]} id="home">
+      <header className={styles["navbar"]}>
         <nav>
-          <div className="left-side">
+          <a href="#home">
+             <div className={styles["left-side"]}>
             <h1>DevBen</h1>
           </div>
-
-          <div className="right-side">
+          </a>
+          <div className={styles["right-side"]}>
             {/* Overlay (click to close) */}
             <div
-              className={`overlay ${menuOpen ? "active" : ""}`}
+              className={`${styles.overlay} ${menuOpen ? ["active"] : [""]}`}
               onClick={closeMenu}
               aria-hidden={!menuOpen}
             />
 
             {/* Mobile Menu */}
             <ul
-              className={`mobile-menu ${menuOpen ? "active" : ""}`}
+              className={`${styles.mobile_menu} ${menuOpen ? ["active"] : [""]}`}
               aria-hidden={!menuOpen}
             >
               <li
-                className="closeMenu"
+                className={styles["closeMenu"]}
                 onClick={closeMenu}
                 role="button"
                 tabIndex={0}
@@ -58,18 +60,18 @@ const Navsection = () => {
               <li><a href="#about" onClick={closeMenu}>About</a></li>
               <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
               <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
-              <li><a href="#contact" onClick={closeMenu}>Contact-me</a></li>
+              <li><a href="#contact" onClick={closeMenu}>Get-In-Touch</a></li>
             </ul>
 
-            {/* Desktop Menu */}
-            <ul className="nav-links">
+            {/*Menu Menu*/}
+            <ul className={styles["nav-links"]}>
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact-me</a></li>
+              <li><a href="#contact">Get-In-Touch</a></li>
               <li
-                className="openMenu"
+                className={styles["openMenu"]}
                 onClick={openMenu}
                 style={{ cursor: "pointer" }}
               >
