@@ -179,11 +179,11 @@ nav .right-side ul li a:focus::after {
   pointer-events: none;
   transition: opacity .25s ease;
 }
-.overlay.active {
+
+.overlayActive {
   opacity: 1;
   pointer-events: auto;
 }
-
 /* ----------------------------
    Open menu (hamburger)
    ---------------------------- */
@@ -244,14 +244,23 @@ nav a:focus {
     object-fit: contain;
   }
 
-  .mobile_menu {
-    width: 70%;
-    transform: translateX(100%);
-  }
-  .mobile_menu.active {
-    transform: translateX(0);
-  }
+.mobile_menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 75%;
+  max-width: 340px;
+  transform: translateX(110%);
+  opacity: 0;
+  pointer-events: none;
+}
 
+.mobileMenuActive {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
   .mobile_menu ul {
     display: flex;
     flex-direction: column;

@@ -36,16 +36,14 @@ const Navsection = () => {
           <div className={styles["right-side"]}>
             {/* Overlay (click to close) */}
             <div
-              className={`${styles.overlay} ${menuOpen ? ["active"] : [""]}`}
-              onClick={closeMenu}
-              aria-hidden={!menuOpen}
-            />
+            className={`${styles.overlay} ${menuOpen ? styles.overlayActive : ""}`}
+            onClick={closeMenu}
+          />
 
             {/* Mobile Menu */}
-            <ul
-              className={`${styles.mobile_menu} ${menuOpen ? ["active"] : [""]}`}
-              aria-hidden={!menuOpen}
-            >
+           <ul
+          className={`${styles.mobile_menu} ${menuOpen ? styles.mobileMenuActive : ""}`}
+        >
               <li
                 className={styles["closeMenu"]}
                 onClick={closeMenu}
