@@ -7,7 +7,7 @@ const groups = [
   },
   {
     name: "Backend and data",
-    items: ["Node.js", "Express.js", "MongoDB", "Redis", "Firebase"],
+    items: ["Node.js", "Express.js", "MongoDB", "Redis", "Firebase", "SupaBase"],
   },
   {
     name: "Testing",
