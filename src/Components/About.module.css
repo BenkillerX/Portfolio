@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;600&display=swap");
+
+/* Same tokens as Project.module.css so the sections match */
+.section {
+  --bg: #ffffff;
+  --surface: #eef1f6;
+  --ink: #16203a;
+  --muted: #55607a;
+  --line: #d9dfeb;
+  --accent: #2f4bff;
+  --accent-ink: #ffffff;
+  --chip: #e8ecf8;
+
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "DM Sans", system-ui, sans-serif;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Bricolage Grotesque", "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 clamp(2rem, 5vw, 3.5rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+/* The one memorable element: a big statement beside the details */
+.statement {
+  font-family: "Bricolage Grotesque", "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin: 0;
+  position: sticky;
+  top: 2rem;
+}
+
+.body {
+  min-width: 0;
+}
+
+.body > p {
+  margin: 0 0 1.1rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 62ch;
+}
+
+/* ---------- Skills ---------- */
+.skills {
+  margin: 2rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.skillRow {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.skillRow dt {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.skillRow dd {
+  margin: 0;
+}
+
+.chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.chips li {
+  background: var(--chip);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
+/* ---------- Call to action ---------- */
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border-radius: 16px;
+}
+
+.cta p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 32ch;
+}
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background: #1f38d6;
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 820px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .statement {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillRow {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

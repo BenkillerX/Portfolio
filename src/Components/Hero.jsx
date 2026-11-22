@@ -1,64 +1,70 @@
-import styles from "./Hero.module.css"
+import styles from "./Hero.module.css";
+
+const facts = [
+  { value: "5+", label: "Projects built" },
+  { value: "Next.js", label: "Frontend" },
+  { value: "Node & Express", label: "Backend" },
+];
+
 const Hero = () => {
   return (
-    <>
-    <main className={styles["hero"]}>
-    <div className={styles["hero-text"]}>
+    <section id="home" className={styles.hero}>
+      <div className={styles.inner}>
+        <div className={styles.text}>
+          <p className={styles.intro}>
+            Benedict Akhere, full&#8209;stack software engineer
+          </p>
 
-    <span className={styles["hero-badge"]}>
-      Software Engineer
-    </span>
+          <h1 className={styles.headline}>
+            I build modern web applications that solve real problems.
+          </h1>
 
-    <h1>
-      I Build Modern <span>Web Applications</span> That
-      Solve Real Problems
-    </h1>
+          <p className={styles.lead}>
+            I create responsive, user&#8209;friendly and scalable products with
+            Next.js, Tailwind CSS, Node.js and Firebase.
+          </p>
 
-    <p>
-      I&rsquo;m Benedict Akhere, a Software engineer passionate about
-      creating responsive, user-friendly, and scalable web applications
-      using mordern technologies such as Next.js, Tailwind, Firebase, and modern web technologies.
-    </p>
+          <div className={styles.actions}>
+            <a href="#projects" className={styles.primary}>
+              View projects
+            </a>
+            <a href="#contact" className={styles.secondary}>
+              Get in touch
+            </a>
+          </div>
 
-    <div className={styles["hero-buttons"]}>
-      <a href="#projects" className={`${styles.btn} ${styles["secondary-btn"]}`}>
-        View Projects
-      </a>
+          <dl className={styles.facts}>
+            {facts.map(({ value, label }) => (
+              <div key={label}>
+                <dt>{label}</dt>
+                <dd>{value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
 
-      <a href="#contact" className={`${styles.btn} ${styles["secondary-btn"]}`}>
-        Get In Touch
-      </a>
-    </div>
+        <div className={styles.visual}>
+          <div className={styles.photoWrap}>
+            <img
+              src="/DevBen.JPG"
+              alt="Benedict Akhere"
+              className={styles.photo}
+            />
+          </div>
 
-    <div className={styles["hero-stats"]}>
-      <div>
-        <h3>5+</h3>
-        <span>Projects Built</span>
+          <a
+            href="https://www.greenspringhome.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.badge}
+          >
+            <span className={styles.badgeRole}>Co&#8209;founder</span>
+            <span className={styles.badgeName}>GreenSpringHomes</span>
+          </a>
+        </div>
       </div>
+    </section>
+  );
+};
 
-      <div>
-        <h3>Next.js</h3>
-        <span>Frontend</span>
-      </div>
-
-      <div>
-        <h3>Node & Express</h3>
-        <span>Backend</span>
-      </div>
-    </div>
-
-  </div>
-
-  <div className={styles["hero-image"]}>
-    <img
-      src="/DevBen.JPG"
-      alt="Benedict Akhere"
-      className={styles["img_img"]}
-    />
-  </div>
-</main>
-    </>
-  )
-}
-
-export default Hero
+export default Hero;

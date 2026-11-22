@@ -1,35 +1,69 @@
+import styles from "./About.module.css";
+
+const skills = [
+  { area: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+  { area: "Backend", items: ["Node.js", "Express", "MongoDB", "Firebase"] },
+  { area: "Mobile", items: ["React Native"] },
+];
 
 const About = () => {
   return (
-  <section id="about" className="about">
-  <div className="container">
-    <h2>About Me</h2>
-    <p>
-      Hi, I&rsquo;m <span>Benedict Akhere</span>, a Software Engineer passionate about building
-      clean, user&#8209;friendly web and mobile experiences. With tools like
-      <span> Next.js</span>, <span>Express.js</span>, and <span>React Native</span>,
-      I transform ideas into products that make a difference.
-    </p>
-    <p>
-      My philosophy is simple: great software should be intuitive, fast, and impactful.
-      I enjoy solving complex problems and turning them into elegant solutions that
-      empower users.
-    </p>
-    <p>
-      Over time, I&rsquo;ve contributed to projects ranging from startups to collaborative
-      open&#8209;source work, always striving to stay ahead in this fast&#8209;paced industry.
-    </p>
-    <p>
-      Outside of coding, I&rsquo;m curious about emerging tech trends, love brainstorming
-      creative solutions, and enjoy connecting with other developers to share ideas.
-    </p>
-    <p className="about-cta">
-       Let&rsquo;s collaborate and bring your vision to life!
-    </p>
-  </div>
-</section>
+    <section id="about" className={styles.section}>
+      <div className={styles.container}>
+        <h2 className={styles.title}>About me</h2>
 
-  )
-}
+        <div className={styles.grid}>
+          <p className={styles.statement}>
+            I build web and mobile products that are fast, intuitive and useful
+            to the people who use them.
+          </p>
 
-export default About
+          <div className={styles.body}>
+            <p>
+              I&rsquo;m Benedict Akhere, a full-stack software engineer based in
+              Nigeria. I work mostly with React, Next.js, Node.js and MongoDB,
+              and reach for React Native when a product needs to live on phones.
+            </p>
+            <p>
+              I&rsquo;m drawn to fintech and marketplace products, where speed
+              and clarity decide whether people trust what you&rsquo;ve built.
+              I&rsquo;m a co-founder of GreenSpringHomes, a property marketplace,
+              and I&rsquo;ve contributed to SignalHaive, a trading signals
+              platform.
+            </p>
+            <p>
+              My work ranges from early-stage startups to collaborative
+              open&#8209;source projects. Outside of code, I follow emerging
+              tech, enjoy brainstorming creative solutions, and like trading
+              ideas with other developers.
+            </p>
+
+            <dl className={styles.skills}>
+              {skills.map(({ area, items }) => (
+                <div className={styles.skillRow} key={area}>
+                  <dt>{area}</dt>
+                  <dd>
+                    <ul className={styles.chips}>
+                      {items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+
+            <div className={styles.cta}>
+              <p>Want to talk about a product, an idea or the Nigerian tech scene?</p>
+              <a href="#contact" className={styles.button}>
+                Get in touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
