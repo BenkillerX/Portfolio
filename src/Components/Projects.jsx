@@ -5,7 +5,7 @@ const projects = [
   {
     title: "GreenSpringHomes",
     category: "Property marketplace",
-    img: "/greenspringhomes.png",
+    img: "/greenspring.png",
     url: "https://www.greenspringhome.com",
     summary:
       "A full-stack property marketplace that simplifies property discovery and connects tenants with property owners and service providers across Nigeria.",
@@ -36,7 +36,6 @@ const projects = [
     stack: ["React", "Firebase", "Tailwind CSS"],
   },
 ];
-console.log(projects[0].img);
 
 const hostname = (url) => url.replace(/^https?:\/\//, "").replace(/^www\./, "");
 
