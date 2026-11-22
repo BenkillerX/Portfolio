@@ -46,7 +46,7 @@ const Hero = () => {
         <div className={styles.visual}>
           <div className={styles.photoWrap}>
             <img
-              src="/DevBen.JPG"
+              src="/Me.JPG"
               alt="Benedict Akhere"
               className={styles.photo}
             />
