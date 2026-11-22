@@ -36,6 +36,7 @@ const projects = [
     stack: ["React", "Firebase", "Tailwind CSS"],
   },
 ];
+console.log(projects[0].img);
 
 const hostname = (url) => url.replace(/^https?:\/\//, "").replace(/^www\./, "");
 
