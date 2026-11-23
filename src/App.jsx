@@ -4,30 +4,19 @@ import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import { FaArrowUp } from "react-icons/fa";
-
+import BackToTop from './Components/BackToTop';
+import { Analytics } from "@vercel/analytics/react"
 const App = () => {
   return (
     <>
+    <Analytics/>
       <Navsection />
       <About />
       <Projects />
       <Skills />
       <Contact />
       <Footer />
-      <a href="#home">
-      <button className="backToTop"  
-      onClick={() =>
-      window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-        })
-      }
-      >
-      <FaArrowUp />
-      </button>
-      </a>
-      
+      <BackToTop/>
     </>
   );
 }
