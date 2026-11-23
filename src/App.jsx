@@ -6,6 +6,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import BackToTop from './Components/BackToTop';
 import { Analytics } from "@vercel/analytics/react"
+import Education from './Components/Education';
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
       <About />
       <Projects />
       <Skills />
+      <Education/>
       <Contact />
       <Footer />
       <BackToTop/>
