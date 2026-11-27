@@ -1,16 +1,16 @@
 import styles from './Education.module.css'
 
-// Edit this data to update the section. Nothing else needs to change.
+
 const education = {
   school: "Federal University Oye-Ekiti",
-  degree: "B.Eng. Software Engineering", // change to B.Sc. if that's what your certificate will say
+  degree: "B.Sc. Software Engineering",
   location: "Oye-Ekiti, Ekiti State, Nigeria",
-  duration: 4, // length of the programme in years
-  currentLevel: 2, // 2 = 200 Level
-  startYear: "2025", // TODO: year you were admitted
-  endYear: "2029", // TODO: expected graduation year
+  duration: 4,
+  currentLevel: 2,
+  startYear: "2025",
+  endYear: "2029",
   summary:
-    "Studying software engineering while building real products in the MERN stack, with a focus on fintech and payments.",
+    "Studying software engineering while building real products in the MERN stack, with a focus on fintech, real-estate, education and payments.",
   highlights: [
     // TODO: replace with your own. Examples: courses, projects, clubs, results.
     "Data structures and algorithms",

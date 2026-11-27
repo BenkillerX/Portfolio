@@ -1,39 +1,67 @@
 import { useState } from "react";
 import styles from "./Project.module.css";
 
+
 const projects = [
   {
     title: "GreenSpringHomes",
-    category: "Property marketplace",
+    category: "Real Estate Marketplace",
     img: "/greenspring.png",
     url: "https://www.greenspringhome.com",
     summary:
-      "A full-stack property marketplace that simplifies property discovery and connects tenants with property owners and service providers across Nigeria.",
+      "A full-stack real estate marketplace designed to simplify property discovery and connect tenants with property owners and service providers across Nigeria.",
     details:
-      "Features include property listings and management, image uploads through Cloudinary, JWT-based authentication, role-based access control, advanced property search, and direct communication between tenants and property owners.",
-    stack: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "MongoDB", "JWT", "Cloudinary"],
+      "Features include property listings and management, Cloudinary-powered media uploads, JWT-based authentication, role-based access control, advanced property search, property verification workflows, and direct communication between platform users.",
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Cloudinary",
+    ],
   },
   {
     title: "SignalHaive",
-    category: "Fintech platform",
+    category: "Fintech & Trading Platform",
     img: "/signalhaive.png",
     url: "https://www.signalhaive.com",
     summary:
-      "A financial technology platform that delivers trading signals and market insights, so users can find opportunities, track signal performance and make more informed trading decisions.",
+      "A trading platform that delivers forex market signals and insights, helping users discover trading opportunities and track signal performance.",
     details:
-      "Contributing to the platform gave me experience building and maintaining a real-world product, collaborating on technical decisions, and developing software within a growing product team.",
-    stack: [],
+      "Contributing to the development and maintenance of a growing real-world product, collaborating on technical decisions, improving application functionality, and working within a product development team.",
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+    ],
   },
   {
-    title: "School Management System",
-    category: "Education",
-    img: "/school-system.png",
-    url: "https://school-portal-amber.vercel.app",
+    title: "Upfund",
+    category: "Digital Wallet & Fintech",
+    img: "/upfund.png",
+    url: "https://www.upfunds.com.ng",
     summary:
-      "A school management system that simplifies daily operations for schools, students, teachers and administrators, from student records and attendance to course organization and result checking.",
+      "A digital wallet platform that enables users to fund their wallets, manage balances, and monitor financial transactions through an integrated payment system.",
     details:
-      "The interface is clean and responsive, with pages for student management, academic records, dashboard analytics and school information. The project sharpened my understanding of component-based architecture, routing, responsive design, state management, and connecting frontend apps to cloud databases and authentication.",
-    stack: ["React", "Firebase", "Tailwind CSS"],
+      "Features include Paystack payment integration, wallet balance management, transaction processing, user authentication, administrative dashboards, and transaction monitoring. Built with a focus on secure payment workflows and reliable financial operations.",
+    stack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Paystack",
+      "JWT",
+      "Resend",
+    ],
   },
 ];
 
