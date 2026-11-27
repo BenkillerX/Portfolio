@@ -17,7 +17,7 @@ const socials = [
     external: false,
   },
   {
-    href: "https://github.com/BenkillerX",
+    href: "https://github.com/DevBen27",
     label: "GitHub",
     icon: <FaGithub aria-hidden="true" />,
     external: true,

@@ -7,7 +7,7 @@ const channels = [
   { label: "Email", value: EMAIL, href: `mailto:${EMAIL}`, external: false },
   { label: "WhatsApp", value: "Chat on WhatsApp", href: "https://wa.me/2348033885711", external: true },
   { label: "X", value: "@DevBen08", href: "https://x.com/DevBen08", external: true },
-  { label: "GitHub", value: "BenkillerX", href: "https://github.com/BenkillerX", external: true },
+  { label: "GitHub", value: "DevBen27", href: "https://github.com/DevBen27", external: true },
 ];
 
 const Contact = () => {
